@@ -1,19 +1,20 @@
 #include "main.h"
-/**
- * main - print _putchar
- * Return: 0
- */
 
+/**
+ * main -  prints _putchar, followed by a new line
+ * Return:  0 if successfully compiled, non-zero otherwise
+ */
 int main(void)
 {
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
-return (0);
+	int i = 0;
+	char c;
+	char s[] = "_putchar\n";
+
+	while (i <= 8)
+	{
+		c = s[i];
+		_putchar(c);
+		i++;
+	}
+	return (0);
 }
